@@ -1,0 +1,2 @@
+# static_photo_web_page_creator
+This static HTML file creator is an upgrade to the Perl code that I have here on GitHub. This creator is written in Java and uses only two files for input, rather than the additional items used by the Perl code. It is also more up-to-date, invoking a more recent version of the Vanilla layout. Boilerplate for the pages is kept in a JSON file, and for the purposes of showcasing photos, uses a dark-themed background.
