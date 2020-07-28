@@ -25,8 +25,8 @@ import com.fasterxml.jackson.databind.node.ObjectNode;
 import com.fasterxml.jackson.databind.JsonNode;
 
 /*
- * read some input and make a typical Swanson photo album
- * web page
+ * read some input and make a typical photo album
+ * static web page
  *
  * Updated:
  *
@@ -252,43 +252,7 @@ public class MakeWeb
 				left_side = true; // back again
 			} // end right side
 		} // end while reading 4-line groups
-/*
-foreach (@thumbs)
-{
-	#print;
-	#print "\n";
-	$this_thumb = $_;
-	push @out, '<section class="p-strip--accent">' . "\n"; ## each in an 'accent' section
-	push @out,  '<div class="row">' . "\n"; # new row
-	push @out ,  '<div class="col-6 u-vertically-center">'; # both sides same size
-	if ($left_right == 0)
-	{
-		# left, row already started
-		push @out,   ' <p>  <span class="pic_title">  ' . "$titles[$position]\n"; # text starts with title
-		push @out,  "</span> -- $texts[$position]\n</p> </div> <!-- end text group -->" . '<div class="col-6 u-vertically-center"> <p> <br/>';
-		push @out, '<a href="' . $pics[$position] . '">';
-		push @out,   '<img src="' . $this_thumb . '" alt="[' .
-			$titles[$position] . ']" style="color:black;border:solid;border-width:2px"/></a> </p>' . "\n";
-		push @out,   "</div> <!-- end picture group --> </div> <!-- end row -->\n";
-		push @out,  "</section>\n"; ## each in an accent section
-		$left_right = 1;
-	} ## end left
-	else
-	{
-		# right, row already started
-		push @out,  ' <p> <br/>';
-		push @out,  '<a href="' . $pics[$position] . '">';
-		push @out,  '<img src="' . $this_thumb . '" alt="[' .
-			$titles[$position] . ']" style="color:black;border:solid;border-width:2px"/></a> </p>' . "\n";
-		push @out,  "</div> <!-- end picture group --> \n";
-		push @out,  '<div class="col-6 u-vertically-center"> <p>  <span class="pic_title">  ' . "$titles[$position]\n"; # text starts with title
-		push @out,   "</span> --  $texts[$position]\n</p> </div> <!-- end text group -->\n";
-		push @out,  "</div> <!-- end row -->\n";
-		push @out,  "</section>\n"; ## each in an accent section
-		$left_right = 0; # alternate
-	}
-	$position++; ## advance to next items in lists
-} ## end for each pic
+/* previous perl code removed here
 */
 	} // end write photo material
 
@@ -847,7 +811,7 @@ System.out.println("replaceAString: " + rval);
 				 */
 				result.append(rval.rep + 
 // boilerplate to add to any description DO NOT USE SINGLE QUOTES!
-" This page is part of the Swanson web pages, which cover many of our interests, including: cruising, past RV travel, travel in general, photography, ships and boats, collecting, including postal history interests for Bob, our reading and music interests, as well as some links to web sites we often use to find out about the weather, political opinion, and investing.");
+" This page is part of YOUR WEBSITE (change text here for description text that does not change) .");
 			    	break;
 			} // end 1 which is PROJECT_DESCRIPTION
 			case 2:
