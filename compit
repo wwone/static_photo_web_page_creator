@@ -1,3 +1,13 @@
+#
+# this is a Linux shell script
+#
+# it compiles the Java program for the static HTML photo page creator
+#
+# This code IS DEPENDENT on the use of 'Jackson' for JSON processing
+#
+
+
+
 JAVAC=javac
 echo "- - - - - - -"
 echo "- - - - - - -"
