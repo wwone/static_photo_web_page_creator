@@ -9,3 +9,5 @@ The 'boilerplate' for the web pages is kept in a JSON file, allowing for more fl
 
 For the purposes of showcasing photos, it invokes a Vanilla dark-themed background.
 
+The example directory contains input files that will make an example static photo web page.
+
