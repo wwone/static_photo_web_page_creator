@@ -1,0 +1,19 @@
+JAVAC=javac
+echo "- - - - - - -"
+echo "- - - - - - -"
+echo "- - - - - - -"
+echo "- - - - - - -"
+
+
+# following for JSON
+CP=$CP:jackson-core-2.9.7.jar
+CP=$CP:jackson-databind-2.9.7.jar
+CP=$CP:.
+
+OBJ=MakeWeb
+
+
+
+echo "$JAVAC" -classpath "$CP" $OBJ.java
+"$JAVAC" -classpath "$CP" $OBJ.java
+

@@ -1,0 +1,24 @@
+PROJ=${1:?Must specify project name (arg 1)} 
+
+JAVA=java
+
+##MEM=" -Xms100m -Xmx100m "
+##MEM=" -Xms400m -Xmx400m "
+##MEM=" -Xms200m -Xmx200m "
+MEM=
+
+
+
+# following for JSON
+CP=$CP:jackson-core-2.9.7.jar
+CP=$CP:jackson-databind-2.9.7.jar
+CP=$CP:jackson-annotations-2.9.7.jar
+CP=$CP:.
+
+echo classpath= $CP
+
+OBJ=MakeWeb
+
+echo "$JAVA" $MEM -classpath "$CP" $OBJ $PROJ
+"$JAVA" $MEM -classpath "$CP" $OBJ  $PROJ
+
