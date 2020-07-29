@@ -11,3 +11,6 @@ For the purposes of showcasing photos, it invokes a Vanilla dark-themed backgrou
 
 The example directory contains input files that will make an example static photo web page.
 
+(Note that an issue has been posted requesting the the COVER photo on a page be available in WEBP format, along with
+the usual <img tagged picture.)
+
